@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Add and remouve class with css</title>
+</head>
+
+<body>
+    <p>Tryk på knappen nedenfor, for at sætte en css style på div elementet.</p>
+    <button onclick="myFunction()">Tryk for at ændre</button>
+
+    <div id="myDiv"> Dette er mit div element</div>
+
+    <script>
+        function myFunction() {
+            var element = document.getElementById("myDiv");
+            element.classList.add("myStyle");
+        }
+
+    </script>
+
+
+    <p>Tryk også på denne knap for at få et andet udtryk.</p>
+    <button onclick="myOtherFunction()">Tryk også på denne knap</button>
+
+    <div id="myOtherDiv">Dette er også et div element, men ændrer sig til noget andet.</div>
+
+    <script>
+        function myOtherFunction() {
+            var element = document.getElementById("myOtherDiv");
+            element.classList.add("myOtherStyle");
+        }
+
+    </script>
+</body>
+
+</html>
